@@ -1,0 +1,16 @@
+html,body {
+  height:100%; /* needed for container min-height */
+}
+
+.nav .dropdown{
+	margin-right:15px;
+}
+
+.navbar-inverse .navbar-brand.primary{
+	font-size: 32px;
+	color:#aaa;
+}
+.navbar-brand .letter-o{
+	margin-left:-8px;
+	font-size:18px;
+}
