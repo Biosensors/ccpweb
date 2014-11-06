@@ -5,7 +5,9 @@ html,body {
 .nav .dropdown{
 	margin-right:15px;
 }
+.navbar{
 
+}
 .navbar-inverse .navbar-brand.primary{
 	font-size: 32px;
 	color:#aaa;
@@ -13,4 +15,45 @@ html,body {
 .navbar-brand .letter-o{
 	margin-left:-8px;
 	font-size:18px;
+}
+.yadong-lookup .navbar-nav>li>a {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.nav.navbar-nav li a.active {
+	background-color: #333;
+	color: #ddd;
+}
+.main-view {
+  padding:60px 10px 0 10px;
+  width:100%;
+  display: table;
+  max-width: 920px;
+  margin:auto;
+  font-family: 'Ubuntu', sans-serif;
+  height: calc(100% - 40px);
+  height:-moz-calc(100% - 40px);
+}
+.main-view h1{
+	font-family: 'Poiret One', cursive;
+}
+.search-box input {
+	padding-left: 30px;
+}
+.search-box .glyphicon-search {
+	top:10px;
+	left:10px;
+	position: absolute;
+}
+.shortcut-symbols{
+	color:brown;
+	font-weight: bold;
+	font-size: 18px;
+}
+.footer {
+	background-color: #CCC;
+	margin:auto;
+	text-align: center;
+	height: 40px;
+	line-height: 40px
 }

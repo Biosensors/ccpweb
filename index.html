@@ -41,7 +41,8 @@ b=c(b,"angular",Object);b.$minErr=b.$minErr||d;return c(b,"module",function(){va
 	      'bower_components/angular-animate/angular-animate.min.js',
 	      'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
 	      'bower_components/angular-resource/angular-resource.min.js',
-	      'bower_components/angular-sanitize/angular-sanitize.min.js',
+        'bower_components/angular-sanitize/angular-sanitize.min.js',
+	      'bower_components/angular-smart-table/dist/smart-table.min.js',
 	      'js/app.js',
 	      'js/controllers.js',
 	      'js/services.js',
@@ -60,11 +61,14 @@ b=c(b,"angular",Object);b.$minErr=b.$minErr||d;return c(b,"module",function(){va
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
 <link href='http://fonts.googleapis.com/css?family=Poiret+One|Ubuntu:700italic|Tangerine:700' rel='stylesheet' type='text/css'>
 </head>
-<body ng-cloak>
+<body ng-cloak class="yadong-lookup">
   <div ng-include src="'partials/nav-bar.html'"></div>
-  <div ng-view></div>
 
-  <div class="footer poiret-one">Yadong Lookup: v<span app-version></span></div>
+  <div ng-view class="main-view"></div>
+
+  <div class="footer ubuntu text-muted" ng-controller="footerCtrl">
+    &copy; {{currentDate| date:'yyyy'}} Yadong Lookup: v <span app-version></span>
+  </div>
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+{
+	"module":"shortcuts",
+	"items":[
+		{
+			"name":"webstorm",
+			"image":"images/webstorm.jpeg",
+			"url":"webstorm"
+		},
+		{
+			"name":"vim",
+			"image":"images/vim-logo.png",
+			"url":"vim"
+		},
+		{
+			"name":"eclipse",
+			"image":"images/eclipse.png",
+			"url":"eclipse"
+		},
+		{
+			"name":"sublime text",
+			"image":"images/logo-sublime-3.png",
+			"url":"sublime-text"
+		}
+	]
+}

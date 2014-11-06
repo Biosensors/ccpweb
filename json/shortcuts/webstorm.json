@@ -1,0 +1,95 @@
+{
+  "name":"Webstorm",
+  "shortcuts":[
+    {
+      "category":"editor",
+      "items":[
+        {
+          "name":"Move Caret to previous word",
+          "description":"move,previous,left",
+          "keys":["OPT","LARROW"]
+        },
+        {
+          "name":"Move Caret to previous word",
+          "description":"move,next,right",
+          "keys":["OPT","RARROW"]
+        },
+        {
+          "name":"Move Caret to previous word with selection",
+          "description":"left",
+          "keys":["SHIFT","OPT","LARROW"]
+        },
+        {
+          "name":"Move Caret to next word with selection",
+          "description":"right",
+          "keys":["SHIFT","OPT","RARROW"]
+        },
+        {
+          "name":"Move Caret to Code Block Start",
+          "description":"begining",
+          "keys":["OPT","CMD","["]
+        },
+        {
+          "name":"Move Caret to Code Block End",
+          "description":"",
+          "keys":["OPT","CMD","]"]
+        },
+        {
+          "name":"Move Caret to Code Block Start  with selection",
+          "description":"begining",
+          "keys":["SHIFT","OPT","CMD","["]
+        },
+        {
+          "name":"Move Caret to Code Block End  with selection",
+          "description":"",
+          "keys":["SHIFT","OPT","CMD","]"]
+        },
+        {
+          "name":"Cut up to line end",
+          "description":"delete,remove",
+          "keys":["CTRL","K"]
+        },
+        {
+          "name":"Delete Line",
+          "description":"remove,cut",
+          "keys":["CMD","DEL"]
+        },
+        {
+          "name":"Duplicate line or block",
+          "description":"copy",
+          "keys":["CMD","D"]
+        },
+        {
+          "name":"Join Lines",
+          "description":"merge,line",
+          "keys":["CTRL","SHIFT","J"]
+        },
+        {
+          "name":"Extend Selection",
+          "description":"broad,block",
+          "keys":["OPT","UARROW"]
+        },
+        {
+          "name":"Shrink Selection",
+          "description":"block",
+          "keys":["OPT","DARROW"]
+        },
+        {
+          "name":"Split Line",
+          "description":"separate",
+          "keys":["CMD","RETURN"]
+        },
+        {
+          "name":"Start New Line",
+          "description":"below",
+          "keys":["SHIFT","RETURN"]
+        },
+        {
+          "name":"Start New Line Before Current",
+          "description":"above",
+          "keys":["OPT","SHIFT","RETURN"]
+        }
+      ]
+    }
+  ]
+}

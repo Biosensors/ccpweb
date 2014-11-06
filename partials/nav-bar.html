@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse padding-y padding-left" role="navigation" scroll>
+<nav class="navbar navbar-default navbar-fixed-top navbar navbar-inverse padding-left" role="navigation" scroll ng-controller="navCtrl">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header" >
 
@@ -25,13 +25,13 @@
           <li>{{scroll}}</li>
 
           <li> 
-            <a href="#/chat" active-link="active"> 
+            <a href="#/home" active-link="active"> 
               <span class="fa fa-home fa-lg"></span>
               Home
               </a> 
           </li>
           <li> 
-            <a href="#/contacts"  active-link="active"> 
+            <a href="#/shortcuts"  active-link="active"> 
               <span class="fa fa-keyboard-o fa-lg"></span>
               Shortcuts
             </a> 
@@ -71,9 +71,9 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li>
-                <a role="button" ng-href="" ng-click="$parent.debug = !$parent.debug;">
+                <a role="button" ng-href="" ng-click="toggleDebug()">
                   Debug
-                  <span class="glyphicon glyphicon-ok pull-right text-muted" ng-show="$parent.debug"></span> 
+                  <span class="glyphicon glyphicon-ok pull-right text-muted" ng-show="debug"></span> 
                 </a>
               </li>
             </ul>

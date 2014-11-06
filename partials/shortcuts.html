@@ -1,0 +1,12 @@
+<h1>Shortcuts</h1>
+<div class="row">
+  <div class="col-xs-3 col-md-3" ng-repeat="item in shortcuts">
+    <a href="#/{{module}}/{{item.url}}" class="thumbnail">
+      <img ng-src="{{item.image}}">
+    </a>
+       <div class="caption text-center">
+        <h3 class="ubuntu text-warning">{{item.name}}</h3>
+       </div>
+  </div>
+</div>
+<pre ng-show="debug">{{shortcuts | json}}</pre>	

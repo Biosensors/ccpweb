@@ -1,0 +1,15 @@
+{
+  "name":"Eclipse",
+  "shortcuts":[
+    {
+      "category":"editor",
+      "items":[
+        {
+          "name":"xxx",
+          "description":"xx,xx",
+          "keys":["CMD","OPT","CTR","SHIFT","k"]
+        }
+      ]
+    }
+  ]
+}
