@@ -1,5 +1,6 @@
 {
   "name":"Webstorm",
+  "image":"images/webstorm.jpeg",
   "shortcuts":[
     {
       "category":"editor",
@@ -88,6 +89,81 @@
           "name":"Start New Line Before Current",
           "description":"above",
           "keys":["OPT","SHIFT","RETURN"]
+        },
+        {
+          "name":"Search for next Occurrence",
+          "description":"down",
+          "keys":["CMD","G"]
+        },
+        {
+          "name":"Search for previous Occurrence",
+          "description":"up",
+          "keys":["SHIFT","CMD","G"]
+        },
+        {
+          "name":"Move statement down",
+          "description":"",
+          "keys":["SHIFT","CMD","DARROW"]
+        },
+        {
+          "name":"Move statement up",
+          "description":"",
+          "keys":["SHIFT","CMD","UARROW"]
+        },
+        {
+          "name":"Move line down",
+          "description":"",
+          "keys":["OPT","SHIFT","DARROW"]
+        },
+        {
+          "name":"Move line up",
+          "description":"",
+          "keys":["OPT","SHIFT","UARROW"]
+        },
+        {
+          "name":"Auto Indent",
+          "description":"",
+          "keys":["CTRL","OPT","I"]
+        },
+        {
+          "name":"Recent files",
+          "description":"file",
+          "keys":["CMD","E"]
+        },
+        {
+          "name":"Recent Changed files",
+          "description":"modify",
+          "keys":["SHIFT","CMD","E"]
+        },
+        {
+          "name":"Find a symbol",
+          "description":"symbol,variable",
+          "keys":["OPT","CMD","O"]
+        },
+        {
+          "name":"Back to last edit position",
+          "description":"",
+          "keys":["CMD","["]
+        },
+        {
+          "name":"Forward to next edit position",
+          "description":"",
+          "keys":["CMD","]"]
+        },
+        {
+          "name":"Select in ...",
+          "description":"popup",
+          "keys":["OPT","F1"]
+        },
+        {
+          "name":"Jump to Navigation bar",
+          "description":"change folder,file",
+          "keys":["CMD","UARROW"]
+        },
+        {
+          "name":"Surround with ...",
+          "description":"wrap,block",
+          "keys":["OPT","CMD","T"]
         }
       ]
     }

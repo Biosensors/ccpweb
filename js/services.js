@@ -47,7 +47,8 @@
     	RARROW:"&rarr;",
     	LARROW:"&larr;",
     	UARROW:"&uarr;",
-    	DARROW:"&darr;",
+        DARROW:"&darr;",
+    	SPACE:"&nbsp;",
     	APPLE:"&#63743;"
     })
     .value('version', '0.1');

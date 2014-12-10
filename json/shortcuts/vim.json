@@ -1,5 +1,6 @@
 {
   "name":"Vim",
+  "image":"images/vim-logo.png",
   "shortcuts":[
     {
       "category":"editor",
