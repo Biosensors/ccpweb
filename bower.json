@@ -1,18 +1,17 @@
 {
-  "name": "yadong-lookup",
+  "name": "jiahong",
   "version": "0.0.0",
   "authors": [
     "zhuy1 <yadong.zhu@gmail.com>"
   ],
-  "description": "simple web app, lookup something like keyboardshortcuts,userful urls, etc",
+  "description": "simple web app, lookup something like keyboardteam,userful urls, etc",
   "main": "index.html",
   "moduleType": [
     "yui"
   ],
   "keywords": [
-    "yadong",
-    "online",
-    "lookup"
+    "jiahong",
+    "tech"
   ],
   "license": "MIT",
   "private": true,

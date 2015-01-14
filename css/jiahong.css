@@ -5,30 +5,38 @@ html,body {
 .nav .dropdown{
 	margin-right:15px;
 }
-.navbar{
-
-}
-.navbar-inverse .navbar-brand.primary{
-	font-size: 32px;
-	color:#aaa;
-}
-.navbar-brand .letter-o{
-	margin-left:-8px;
-	font-size:18px;
-}
-.yadong-lookup .navbar-nav>li>a {
-	padding-top: 20px;
-	padding-bottom: 20px;
+.jiahong .navbar-inverse .navbar-collapse, 
+.jiahong .navbar-inverse .navbar-form{
+	background-color: #337ab7;
+	border-color: #2e6da4;
 }
 .nav.navbar-nav li a.active {
-	background-color: #333;
-	color: #ddd;
+	background-color: #2e6da4;
+	color: #EEE;
+}
+.jiahong .navbar-inverse{
+	background-color: #337ab7;
+	border-color: #2e6da4;
+}
+.jiahong .navbar-inverse .navbar-nav>li>a{
+	color:#DDD;
+}
+.navbar-inverse .navbar-brand.primary{
+	font-size: 22px;
+	color:#FFF;
+}
+.jiahong .navbar-brand {
+	line-height: 30px;
+}
+.jiahong .navbar-nav>li>a {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .main-view {
   padding:60px 10px 0 10px;
   width:100%;
   display: table;
-  max-width: 920px;
+  max-width: 768px;
   margin:auto;
   font-family: 'Ubuntu', sans-serif;
   height: calc(100% - 40px);

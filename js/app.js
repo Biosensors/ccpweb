@@ -1,16 +1,16 @@
-/*yadongLookup - App.js - Yadong Zhu 2014*/
+/*jiahong - App.js - Yadong Zhu 2014*/
 (function() {
     'use strict';
     // Declare app level module which depends on filters, and services
-    angular.module('yadongLookup', [
+    angular.module('jiahong', [
         'ngRoute',
         'ngResource',
         'ngAnimate',
         'ngSanitize',
-        'yadongLookup.controllers',
-        'yadongLookup.services',
-        'yadongLookup.filters',
-        'yadongLookup.directives',
+        'jiahong.controllers',
+        'jiahong.services',
+        'jiahong.filters',
+        'jiahong.directives',
         'smart-table',
         'ui.bootstrap'
     ]).
@@ -21,37 +21,21 @@
                 templateUrl: 'partials/home.html',
                 controller: 'homeCtrl'
             })
-            .when('/shortcuts', {
-                templateUrl: 'partials/shortcuts.html',
-                controller: 'shortcutsCtrl',
-                resolve:{
-                    list:['$q','ydlService',
-                            function($q,ydlSvc){
-                                var deferred = $q.defer();
-                                ydlSvc.getShortcutsList().$promise.then(function(resp){
-                                    deferred.resolve(resp);
-                                },function(err){
-                                    deferred.reject(err);
-                                })
-                                return deferred.promise;
-                            }]
-                }
+            .when('/team', {
+                templateUrl: 'partials/team.html',
+                controller: 'teamCtrl'
             })
-            .when('/shortcuts/:name', {
-                templateUrl: 'partials/shortcut-module.html',
-                controller: 'shortcutModuleCtrl',
-                resolve:{
-                    module:['$q','$route','ydlService',
-                            function($q,$route,ydlSvc){
-                                var deferred = $q.defer();
-                                ydlSvc.getShortcutsModule({name:$route.current.params.name}).$promise.then(function(resp){
-                                    deferred.resolve(resp);
-                                },function(err){
-                                    deferred.reject(err);
-                                })
-                                return deferred.promise;
-                            }]
-                }
+            .when('/products', {
+                templateUrl: 'partials/products.html',
+                controller: 'productsCtrl'
+            })
+            .when('/jobs', {
+                templateUrl: 'partials/jobs.html',
+                controller: 'jobsCtrl'
+            })
+            .when('/aboutus', {
+                templateUrl: 'partials/aboutus.html',
+                controller: 'aboutusCtrl'
             })
             .otherwise({
                 redirectTo: '/home'

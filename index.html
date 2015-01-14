@@ -50,24 +50,23 @@ b=c(b,"angular",Object);b.$minErr=b.$minErr||d;return c(b,"module",function(){va
 	      'js/directives.js'
 	    ], function() {
 	      // when all is done, execute bootstrap angular application
-	      angular.bootstrap(document, ['yadongLookup']);
+	      angular.bootstrap(document, ['jiahong']);
 	    });
 	    });
   </script>
-  <title>Yadong Lookup</title>
+  <title>嘉宏科技公司</title>
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/yadong-lookup.css">
+  <link rel="stylesheet" href="css/jiahong.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
-<link href='http://fonts.googleapis.com/css?family=Poiret+One|Ubuntu:700italic|Tangerine:700' rel='stylesheet' type='text/css'>
 </head>
-<body ng-cloak class="yadong-lookup">
+<body ng-cloak class="jiahong">
   <div ng-include src="'partials/nav-bar.html'"></div>
 
   <div ng-view class="main-view"></div>
 
   <div class="footer ubuntu text-muted" ng-controller="footerCtrl">
-    &copy; {{currentDate| date:'yyyy'}} Yadong Lookup: v <span app-version></span>
+    &copy; {{currentDate| date:'yyyy'}} 嘉宏科技公司</span>
   </div>
 
 </body>

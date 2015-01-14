@@ -1,55 +1,40 @@
-/*yadongLookup - services.js - Yadong Zhu 2014*/
+/*jiahong - services.js - Yadong Zhu 2014*/
 (function() {
     'use strict';
     /* Services */
-    angular.module('yadongLookup.services', ['ngResource'])
+    angular.module('jiahong.services', ['ngResource'])
     .factory('ydlService', function($resource) {
     	return $resource(
-    		'/yadong-lookup/:type/:module/:name.json', 
+    		'/jiahong/:type/:module/:name.json', 
     		{ 
     			type: '@type',
     			module: '@module',
     			name:'@name'
     		}, 
             {
-                getShortcutsList: {
+                getteamList: {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/json'
                     },
                     params: {
                         type: 'json',
-                        module: 'shortcuts',
+                        module: 'team',
                         name:'list'
                     }
                 },
-                getShortcutsModule: {
+                getteamModule: {
                     method: 'GET',
                     headers: {
                         'Accept': 'application/json'
                     },
                     params: {
                         type: 'json',
-                        module: 'shortcuts'
+                        module: 'team'
                     }
                 }
          	});
     })
-    .value('symbols', {
-    	CMD:"&#8984;",
-    	OPT:"&#8997;",
-    	CTRL:'&#8963;',
-    	CAPS:'&#8682;',
-    	SHIFT:"&#8679;",
-    	ESC:"&#9099;",
-    	RETURN:"&#9166;",
-    	DEL:"&#9003;",
-    	RARROW:"&rarr;",
-    	LARROW:"&larr;",
-    	UARROW:"&uarr;",
-        DARROW:"&darr;",
-    	SPACE:"&nbsp;",
-    	APPLE:"&#63743;"
-    })
-    .value('version', '0.1');
+
+    .value('version', '1.0');
  }())
