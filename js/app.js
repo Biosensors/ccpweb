@@ -31,7 +31,27 @@
             })
             .when('/jobs', {
                 templateUrl: 'partials/jobs.html',
-                controller: 'jobsCtrl'
+                controller: 'jobsCtrl',
+                resolve:{
+                    jobs:['$q','$http','jiahongService',
+                            function($q,$http,jhSvc){
+                                var deferred = $q.defer();
+                                // jhSvc.getJobsList().$promise.then(function(resp){
+                                //     deferred.resolve(resp);
+                                // },function(err){
+                                //     deferred.resolve(err);
+                                //     // deferred.reject(err);
+                                // })
+                                $http.get("/jiahongweb/json/jobs.json")
+                                .success(function(data,status,header,config){
+                                    deferred.resolve(data);
+                                })
+                                .error(function(data, status, headers, config) {
+                                    deferred.reject(err);
+                                  });
+                                return deferred.promise;
+                            }]
+                }
             })
             .when('/aboutus', {
                 templateUrl: 'partials/aboutus.html',

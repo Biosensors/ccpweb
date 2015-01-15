@@ -20,7 +20,8 @@
     .controller('productsCtrl', ['$scope', function($scope){
 
     }])
-    .controller('jobsCtrl', ['$scope', function($scope){
+    .controller('jobsCtrl', ['$scope','jobs', function($scope,jobs){
+        $scope.jobs = jobs;
 
     }])
     .controller('aboutusCtrl', ['$scope', function($scope){

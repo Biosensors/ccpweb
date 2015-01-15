@@ -1,4 +1,22 @@
 <div class="page-header">
   <h1>嘉宏科技公司 <small>招聘启事</small></h1>
 </div>
-<pre ng-show="debug">{{team | json}}</pre>	
+<ul class="list-group jobs" ng-repeat="job in jobs">
+  <li class="list-group-item list-group-item-warning job-name alert alert-warning">{{job.name}}</li>
+  <li class="list-group-item">
+  	<h5>岗位职责:</h5>
+	<ol>
+		<li ng-repeat="res in job.responsibility">{{res}}</li>
+	</ol>
+
+  	<h5>岗位要求:</h5>
+	<ol>
+		<li ng-repeat="req in job.skillRequirements">{{req}}</li>
+	</ol>
+
+  </li>
+</ul>
+<div class="margin-y padding-bottom">
+	工资面议，有意者请发电子邮件：<a href="mailto:huangjiugao@foxmail.com?Subject=嘉宏招聘" target="_top">huangjiugao@foxmail.com</a>
+</div>
+<pre ng-show="debug">{{jobs | json}}</pre>	

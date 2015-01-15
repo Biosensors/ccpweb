@@ -65,3 +65,13 @@ html,body {
 	height: 40px;
 	line-height: 40px
 }
+
+/*jobs*/
+.jobs h5{
+	color:#2e6da4;
+	font-weight: bold;
+	font-size:16px;
+}
+.jobs .job-name{
+	font-size:18px;
+}

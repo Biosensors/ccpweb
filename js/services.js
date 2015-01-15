@@ -3,36 +3,19 @@
     'use strict';
     /* Services */
     angular.module('jiahong.services', ['ngResource'])
-    .factory('ydlService', function($resource) {
+    .factory('jiahongService', function($resource) {
     	return $resource(
-    		'/jiahong/:type/:module/:name.json', 
-    		{ 
-    			type: '@type',
-    			module: '@module',
-    			name:'@name'
-    		}, 
+    		'/jiahongweb/:type/:name.json', 
+    		{}, 
             {
-                getteamList: {
+                getJobsList: {
                     method: 'GET',
-                    headers: {
-                        'Accept': 'application/json'
-                    },
                     params: {
                         type: 'json',
-                        module: 'team',
-                        name:'list'
+                        name:'jobs'
                     }
                 },
-                getteamModule: {
-                    method: 'GET',
-                    headers: {
-                        'Accept': 'application/json'
-                    },
-                    params: {
-                        type: 'json',
-                        module: 'team'
-                    }
-                }
+                cache:true
          	});
     })
 
