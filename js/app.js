@@ -42,7 +42,7 @@
                                 //     deferred.resolve(err);
                                 //     // deferred.reject(err);
                                 // })
-                                $http.get("/jiahongweb/json/jobs.json")
+                                $http.get("json/jobs.json")
                                 .success(function(data,status,header,config){
                                     deferred.resolve(data);
                                 })

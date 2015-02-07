@@ -13,6 +13,18 @@
 	<ol>
 		<li ng-repeat="req in job.skillRequirements">{{req}}</li>
 	</ol>
+	<span ng-if="job.educationRequirements">
+		<h5>学历要求:</h5>
+		<ul>
+			<li ng-repeat="req in job.educationRequirements">{{req}}</li>
+		</ul>
+	</span>
+	<span ng-if="job.salary">
+		<h5>工资水平:</h5>
+		<ul>
+			<li ng-repeat="req in job.salary">{{req}}</li>
+		</ul>
+	</span>
 
   </li>
 </ul>
