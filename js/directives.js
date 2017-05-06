@@ -1,8 +1,8 @@
-/*jiahong - directives.js - Yadong Zhu 2014*/
+/*ccp - directives.js - Yadong Zhu 2014*/
 (function() {
     'use strict';
     /* Directives */
-    angular.module('jiahong.directives', [])
+    angular.module('ccp.directives', [])
     .directive('appVersion', ['version', function(version) {
 	    return function(scope, elm, attrs) {
 	      elm.text(version);

@@ -1,11 +1,11 @@
-/*jiahong - services.js - Yadong Zhu 2014*/
+/*ccp - services.js - Yadong Zhu 2014*/
 (function() {
     'use strict';
     /* Services */
-    angular.module('jiahong.services', ['ngResource'])
-    .factory('jiahongService', function($resource) {
+    angular.module('ccp.services', ['ngResource'])
+    .factory('ccpService', function($resource) {
     	return $resource(
-    		'/jiahongweb/:type/:name.json', 
+    		'/ccpweb/:type/:name.json', 
     		{}, 
             {
                 getJobsList: {

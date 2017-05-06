@@ -1,8 +1,8 @@
-/*jiahong - Controllers.js - Yadong Zhu 2014*/
+/*ccp - Controllers.js - Yadong Zhu 2014*/
 (function() {
     'use strict';
     /* Controllers */
-    angular.module('jiahong.controllers', [])
+    angular.module('ccp.controllers', [])
     .controller('navCtrl', ['$scope', '$rootScope', function($scope,$rootScope){
     	$scope.toggleDebug=function(){
     		$rootScope.debug=!$rootScope.debug;

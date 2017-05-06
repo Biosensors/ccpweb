@@ -1,16 +1,16 @@
-/*jiahong - App.js - Yadong Zhu 2014*/
+/*ccp - App.js - Yadong Zhu 2014*/
 (function() {
     'use strict';
     // Declare app level module which depends on filters, and services
-    angular.module('jiahong', [
+    angular.module('ccp', [
         'ngRoute',
         'ngResource',
         'ngAnimate',
         'ngSanitize',
-        'jiahong.controllers',
-        'jiahong.services',
-        'jiahong.filters',
-        'jiahong.directives',
+        'ccp.controllers',
+        'ccp.services',
+        'ccp.filters',
+        'ccp.directives',
         'smart-table',
         'ui.bootstrap'
     ]).
@@ -33,7 +33,7 @@
                 templateUrl: 'partials/jobs.html',
                 controller: 'jobsCtrl',
                 resolve:{
-                    jobs:['$q','$http','jiahongService',
+                    jobs:['$q','$http','ccpService',
                             function($q,$http,jhSvc){
                                 var deferred = $q.defer();
                                 // jhSvc.getJobsList().$promise.then(function(resp){
