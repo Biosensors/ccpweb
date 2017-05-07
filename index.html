@@ -42,8 +42,9 @@ b=c(b,"angular",Object);b.$minErr=b.$minErr||d;return c(b,"module",function(){va
 	      'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js',
 	      'bower_components/angular-resource/angular-resource.min.js',
         'bower_components/angular-sanitize/angular-sanitize.min.js',
+        'bower_components/angular-translate/angular-translate.min.js',
 	      'bower_components/angular-smart-table/dist/smart-table.min.js',
-	      'js/app.js',
+        'js/app.js',
 	      'js/controllers.js',
 	      'js/services.js',
 	      'js/filters.js',
@@ -54,7 +55,7 @@ b=c(b,"angular",Object);b.$minErr=b.$minErr||d;return c(b,"module",function(){va
 	    });
 	    });
   </script>
-  <title>吉威重症监护公司</title>
+  <title>{{'TITLE'|translate}}</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/ccp.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
@@ -66,7 +67,7 @@ b=c(b,"angular",Object);b.$minErr=b.$minErr||d;return c(b,"module",function(){va
   <div ng-view class="main-view"></div>
 
   <div class="footer ubuntu text-muted" ng-controller="footerCtrl">
-    &copy; {{currentDate| date:'yyyy'}} 嘉宏科技公司</span>
+    &copy; {{currentDate| date:'yyyy'}} {{'COMPANY_NAME'|translate}}</span>
   </div>
 
 </body>

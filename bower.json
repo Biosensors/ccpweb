@@ -32,6 +32,7 @@
     "angular-sanitize": "1.5.7",
     "angular-resource": "1.5.7",
     "angular-loader": "1.5.7",
+    "angular-translate": "~2.6.1",
     "angular-smart-table": "~1.4.3"
   },
   "resolutions": {

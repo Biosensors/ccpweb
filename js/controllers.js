@@ -11,7 +11,7 @@
     .controller('footerCtrl', ['$scope', function($scope){
     	$scope.currentDate = new Date();
     }])
-    .controller('homeCtrl', ['$scope', function($scope){
+    .controller('homeCtrl',['$scope', function($scope){
     	
     }])
     .controller('teamCtrl', ['$scope', function($scope){

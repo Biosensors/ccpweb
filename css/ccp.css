@@ -43,7 +43,8 @@ html,body {
   height:-moz-calc(100% - 40px);
 }
 .main-view h1{
-	font-family: 'Poiret One', cursive;
+	/*font-family: 'Poiret One', cursive;*/
+	font-family: serif;
 }
 .search-box input {
 	padding-left: 30px;
@@ -74,4 +75,9 @@ html,body {
 }
 .jobs .job-name{
 	font-size:18px;
+}
+
+.ccp .ccp-indent{
+	margin-top: 20px;
+	text-indent: 30px;
 }

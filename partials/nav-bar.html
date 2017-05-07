@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
         </button>
         <div class="navbar-brand primary">
-        <span class="tangerine">嘉宏科技</span> 
+        <span class="tangerine">{{'TITLE'|translate}}</span> 
         </div> 
 
       </div>
@@ -23,25 +23,25 @@
           <li> 
             <a href="#/home" active-link="active"> 
               <span class="fa fa-home fa-lg"></span>
-              首页
+              {{'HOME'|translate}}
               </a> 
           </li>
           <li> 
             <a href="#/products" active-link="active"> 
               <span class="fa fa-gears fa-lg"></span>
-              产品介绍
+              {{'PRODUCTS'|translate}}
             </a> 
           </li>
           <li> 
             <a href="#/team" active-link="active"> 
               <span class="fa fa-users fa-lg"></span>
-              团队介绍
+              {{'TEAM'|translate}}
             </a> 
           </li>
           <li> 
             <a href="#/jobs" active-link="active"> 
               <span class="fa fa-heart-o fa-lg"></span>
-              公司招聘
+              {{'HIRE'|translate}}
             </a> 
           </li>
         </ul>
@@ -50,14 +50,26 @@
          <li> 
             <a href="#/aboutus"  active-link="active">
               <span class="fa fa-pencil-square-o fa-lg"></span>
-              关于我们
+              {{'ABOUT_US'|translate}}
             </a> 
           </li>
-         
+          <li class="margin-right">
 
+            <a role="button" href="" ng-click="$parent.setLang('en_US')" ng-show="lang==='zh_CN'">
+            <span class="fa fa-language fa-lg" aria-hidden="true"></span>
+            {{'BUTTON_LANG_EN'|translate}}</a>
+          </li>
+          <li class="margin-right">
+            <a role="button" href="" ng-click="$parent.setLang('zh_CN')" ng-show="lang==='en_US'">
+              <span class="fa fa-language fa-lg" aria-hidden="true"></span>
+            {{'BUTTON_LANG_CN'|translate}}</a>
+          </li>       
+<!--
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span> <b class="caret"></b></a>
             <ul class="dropdown-menu">
+            <li><a role="button" href="" ng-click="$parent.setLang('en_US')" ng-show="lang==='zh_CN'">{{'BUTTON_LANG_EN'|translate}}</a></li>
+              <li><a role="button" href="" ng-click="$parent.setLang('zh_CN')" ng-show="lang==='en_US'">{{'BUTTON_LANG_CN'|translate}}</a></li>
               <li>
                 <a role="button" ng-href="" ng-click="toggleDebug()">
                   Debug
@@ -66,6 +78,7 @@
               </li>
             </ul>
           </li>
+          -->
         </ul>
       </div><!-- /.navbar-collapse -->
     </nav>
