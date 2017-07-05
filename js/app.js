@@ -57,9 +57,9 @@
                     loadtranslation:loadtransPromise
                 }
             })
-            .when('/team', {
-                templateUrl: 'partials/team.html',
-                controller: 'teamCtrl',
+            .when('/ourCompany', {
+                templateUrl: 'partials/ourCompany.html',
+                controller: 'ourCompanyCtrl',
                 resolve:{
                     loadtranslation:loadtransPromise
                 }

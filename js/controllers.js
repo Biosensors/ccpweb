@@ -14,7 +14,7 @@
     .controller('homeCtrl',['$scope', function($scope){
     	
     }])
-    .controller('teamCtrl', ['$scope', function($scope){
+    .controller('ourCompanyCtrl', ['$scope', function($scope){
 
     }])
     .controller('productsCtrl', ['$scope', function($scope){
